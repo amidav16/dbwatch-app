@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import SideNav from "./client/sidenav";
+import TopNav from "./client/topnav";
+import Footer from "./client/footer";
+import Routes from "./client/routes";
+
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <TopNav/>
+      <SideNav/>
+      <Routes/>
+      <Footer/>
     </div>
+
   );
 }
 
